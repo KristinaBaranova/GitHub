@@ -1,0 +1,91 @@
+
+1. На локальном репозитории сделать ветки для:
+- Postman
+- Jmeter
+- CheckLists
+- BugReports
+- SQL
+- Charles
+- MobileTesting
+
+2. Запушить все ветки на внешний репозиторий
+
+git push origin Postman Jmeter CheckLists BugReports SQL Charles MobileTesting
+
+3. В ветке BugReports сделать текстовый документ со структурой баг репорта
+
+ git ckeckout BugReports
+
+ cat>>BR.txt
+ ID:91
+ Date: 18.09.2023
+ Severity: Minor
+ Title: The Page Control is in the previous state in the "Final study" Section when the Final study section is reopened	
+ Precondition:
+ 1. The app is downloaded
+ 2. The app is launched
+ 3. All ""Crypto tests"" are passed 
+ 4. The ""Final study"" Section is opened
+ STR:
+ 1. Go to any Screen except the first
+ 2. Tap the Close Button
+ 3. Open any Action Card
+ 4. Go to the ""Test"" Screen
+ 3. Pass crypto test
+ 4. Tap [Go to achievements] Button 
+
+ AR: The Page Control is in the previous state	
+ ER: The page control is in its initial state and corresponds to the screen sequence number
+
+
+ git add .
+ git commit -m "BR is added"
+
+ 4. Запушить структуру багрепорта на внешний репозиторий
+
+ git push -u origin BugReports
+
+ 5. Вмержить ветку BugReports в Main
+
+ git checkout main
+ git merge BugReports
+
+ 6. Запушить main на внешний репозиторий.
+
+ git push
+
+ 7. В ветке CheckLists набросать структуру чек листа.
+
+ git checkout CheckLists
+ cat>>CheckList.txt
+ 1. Предварительная подготовка:
+ Понимание требований и функциональных возможностей
+ Создание тестовых случаев и плана тестирования
+ Загрузка тестовых данных, если необходимо
+ 2. Функциональное тестирование:
+ 2.1. Навигация и пользовательский интерфейс:
+ Проверка работоспособности основных элементов интерфейса
+ Проверка корректности переходов между страницами
+ 2.2. Работа с данными:
+ Ввод и сохранение данных
+ Редактирование и удаление данных
+ Обработка форм и валидация ввода
+ 2.3. Функциональность модулей:
+ Проверка работоспособности каждого модуля
+ Тестирование функций, связанных с базой данных
+ 3. Совместимость:
+ Тестирование в различных браузерах (Chrome, Firefox, Safari, Edge)
+ Проверка совместимости с различными операционными системами
+
+
+ git add .
+ git commit -m "CheckList is added"
+
+ 8. Запушить структуру на внешний репозиторий
+
+ git push -u origin CheckLists
+
+ 9. На внешнем репозитории сделать Pull Request ветки CheckLists в main
+ 10. Синхронизировать Внешнюю и Локальную ветки Main
+
+ git pull

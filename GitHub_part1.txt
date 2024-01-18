@@ -1,0 +1,329 @@
+
+JSON
+
+ 1. Создать внешний репозиторий c названием JSON.
+ 2. Клонировать репозиторий JSON на локальный компьютер.
+ 
+ git clone https://github.com/KristinaBaranova/JSON.git
+
+ 3. Внутри локального JSON создать файл “new.json”.
+ 
+ cd JSON
+ touch new.json
+ 
+ 4. Добавить файл под гит.
+ 
+ git add .
+
+ 5. Закоммитить файл.
+ 
+ git commit -m "the file new.json is added"
+
+ 6. Отправить файл на внешний GitHub репозиторий.
+ 
+ git push
+ 
+ 7. Отредактировать содержание файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата).
+ Всё написать в формате JSON.
+ 
+ vim new.json
+ {
+ "surname":"Баранова",
+ "name":"Кристина",
+ "age":30,
+ "pets":0,
+ "salary":1000
+ }
+ 
+ 8. Отправить изменения на внешний репозиторий.
+ 
+ git commit -am "info is added"
+ git push
+
+ 9. Создать файл preferences.json
+ 
+ touch preferences.json
+
+ 10. В файл preferences.json добавить информацию о своих предпочтениях
+ (Любимый фильм, любимый сериал, любимая еда, любимое время года, страна, которую хотели бы посетить) в формате JSON.
+ 
+ vim preferences.json
+ {
+ "FavMovie":"Coco",
+ "FavSeries":"TedLasso",
+ "FavFood":"sushi",
+ "FavSeason":"autumn",
+ "DreamCountry":"Canada"
+ }
+ 
+ 11. Создать файл skills.json добавить информацию о скиллах, которые будут изучены на курсе в формате JSON
+ 
+ cat>>skills.json
+ {
+ "Theory":["виды","уровни","документация"],
+ "ClientServerArchitecture":["клиент","сервер","протоколы"],
+ "TestDesignTechniques":["классы эквивалентности","граничные значения","попарное тестироваие","таблица принятия решений"],
+ "Tools":["DevTools","Postman","Charles","Fiddler","Git","Android Studio","Jmeter"],
+ "SQL":["Create","Delete","Drop","Insert Into","Select","From","Where","Join"]
+ }
+ 
+ 12. Отправить сразу 2 файла на внешний репозиторий.
+ 
+ git add .
+ git commit -m ""the files preferences and skills are added"
+ git push
+ 
+ 13. На веб интерфейсе создать файл bug_report.json.
+ 14. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 15. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON.
+ {
+ "BugID":1,
+ "Title":"Сортировка товаров по «названию: А-Я» на странице каталога сортирует товар по увеличению цены",
+ "STR":[
+		{"1":"Зайти на сайт https://mobile-qa-automation.com/catalog_bugged"},
+		{"2":"Выбрать сортировку товаров по «названию А-Я»"}
+		],
+ "ER":"При применении сортировки товаров по «названию: А-Я», товары отображаются в алфавитном порядке",
+ "AR":"При применении сортировки товаров по «названию: А-Я», товары сортируются по увеличению цены",
+ "Environment":"Майкрософт Windows 10Pro, ver.: 10.0.19042; Google Chrome ver.: 100.0.4896.127",
+ "Attachments":"Link"
+  }
+ 
+ 16. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 17. Синхронизировать внешний и локальный репозиторий JSON
+ 
+ git pull
+
+
+XML
+ 1. Создать внешний репозиторий c названием XML.
+ 2. Клонировать репозиторий XML на локальный компьютер.
+
+ git clone https://github.com/KristinaBaranova/XML.git
+
+ 3. Внутри локального XML создать файл “new.xml”.
+
+ cd XML
+ touch new.xml
+
+ 4. Добавить файл под гит.
+
+git add.
+
+ 5. Закоммитить файл.
+
+git commit -m "the file new.xml is added"
+
+ 6. Отправить файл на внешний GitHub репозиторий.
+
+git push
+
+ 7. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата).
+ Всё написать в формате XML.
+
+ vim new.xml
+ <root>
+    <surname>Баранова</surname>
+    <name>Кристина</name>
+    <age>30</age>
+    <pets>0</pets>
+    <salary>1000</salary>
+ </root>
+
+ 8. Отправить изменения на внешний репозиторий.
+
+ git commit -am "info is added"
+ git push
+
+ 9. Создать файл preferences.xml
+
+ touch preferences.xml
+
+ 10. В файл preferences.xml добавить информацию о своих предпочтениях
+ (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML.
+
+ vim preferences.xml
+ <root>
+    <FavMovie>Coco</FavMovie>
+    <FavSeries>TedLasso</FavSeries>
+    <FavFood>sushi</FavFood>
+    <FavSeason>autumn</FavSeason>
+    <DreamCountry>Canada</DreamCountry>
+ </root>
+
+ 11. Создать файл skills.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML
+
+ cat>>skills.xml
+ <root>
+    <Theory>
+        <item>виды</item>
+        <item>уровни</item>
+        <item>документация</item>
+    </Theory>
+    <ClientServerArchitecture>
+        <item>клиент</item>
+        <item>сервер</item>
+        <item>протоколы</item>
+    </ClientServerArchitecture>
+    <TestDesignTechniques>
+        <item>классы эквивалентности</item>
+        <item>граничные значения</item>
+        <item>попарное тестирование</item>
+        <item>таблица принятия решений</item>
+    </TestDesignTechniques>
+    <Tools>
+        <item>DevTools</item>
+        <item>Postman</item>
+        <item>Charles</item>
+        <item>Fiddler</item>
+        <item>Git</item>
+        <item>Android Studio</item>
+        <item>Jmeter</item>
+    </Tools>
+    <SQL>
+        <item>Create</item>
+        <item>Delete</item>
+        <item>Drop</item>
+        <item>Insert Into</item>
+        <item>Select</item>
+        <item>From</item>
+        <item>Where</item>
+        <item>Join</item>
+    </SQL>
+ </root>
+ 
+ 12. Сделать коммит в одну строку.
+
+ git add .
+ git commit -m ""the files preferences and skills are added"
+
+ 13. Отправить сразу 2 файла на внешний репозиторий.
+
+ git push
+
+ 14. На веб интерфейсе создать файл bug_report.xml.
+ 15. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 16. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML.
+
+ <root>
+    <BugID>1</BugID>
+    <Title>Сортировка товаров по «названию: А-Я» на странице каталога сортирует товар по увеличению цены</Title>
+    <STR>
+        <step>Зайти на сайт https://mobile-qa-automation.com/catalog_bugged</step>
+        <step>Выбрать сортировку товаров по «названию А-Я»</step>
+    </STR>
+    <ER>При применении сортировки товаров по «названию: А-Я», товары отображаются в алфавитном порядке</ER>
+    <AR>При применении сортировки товаров по «названию: А-Я», товары сортируются по увеличению цены</AR>
+    <Environment>Майкрософт Windows 10Pro, ver.: 10.0.19042; Google Chrome ver.: 100.0.4896.127</Environment>
+    <Attachments>Link</Attachments>
+ </root>
+
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 18. Синхронизировать внешний и локальный репозиторий XML
+
+ git pull
+
+ TXT
+ 
+ 1. Создать внешний репозиторий c названием TXT.
+ 2. Клонировать репозиторий TXT на локальный компьютер.
+
+ git clone https://github.com/KristinaBaranova/TXT.git
+
+ 3. Внутри локального TXT создать файл “new.txt”.
+
+ cd TXT
+ touch new.txt
+
+ 4. Добавить файл под гит.
+
+ git add .
+
+ 5. Закоммитить файл.
+
+ git commit -m "new.txt is added"
+
+ 6. Отправить файл на внешний GitHub репозиторий.
+
+ git push
+
+ 7. Отредактировать содержание файла “new.txt” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата).
+ Всё написать в формате TXT.
+
+ vim new.txt
+ surname: Baranova
+ name: Kristina
+ age: 30
+ pets: 0
+ salary: 1000
+ 
+ 8. Отправить изменения на внешний репозиторий.
+
+ git commit -am "info is added"
+ git push
+
+ 9. Создать файл preferences.txt
+
+ touch preferences.txt
+
+ 10. В файл preferences.txt” добавить информацию о своих предпочтениях
+ (Любимый фильм, любимый сериал, любимая еда, любимое время года, страна, которую хотели бы посетить) в формате TXT.
+
+ vim preferences.txt
+ Любимый фильм: Тайна Коко, любимый сериал: Тед Лассо, любимая еда: суши,
+ любимое время года: осень, страна, которую хотели бы посетить: Канада.
+
+ 11. Создать файл sklls.txt добавить информацию о скиллах которые будут изучены на курсе в формате TXT
+
+ cat>>skills.txt
+ Theory:
+ - виды
+ - уровни
+ - документация
+
+ ClientServerArchitecture:
+ - клиент
+ - сервер
+ - протоколы
+
+ TestDesignTechniques:
+ - классы эквивалентности
+ - граничные значения
+ - попарное тестирование
+ - таблица принятия решений
+
+ Tools:
+ - DevTools
+ - Postman
+ - Charles
+ - Fiddler
+ - Git
+ - Android Studio
+ - Jmeter
+
+ SQL:
+ - Create
+ - Delete
+ - Drop
+ - Insert Into
+ - Select
+ - From
+ - Where
+ - Join
+
+ 12. Сделать коммит в одну строку.
+
+ git add .
+ git commit -m ""the files preferences and skills are added"
+
+ 13. Отправить сразу 2 файла на внешний репозиторий.
+ 
+ git push
+
+ 14. На веб интерфейсе создать файл bug_report.txt.
+ 15. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 16. На веб интерфейсе модифицировать файл bug_report.txt, добавить баг репорт в формате TXT.
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 18. Синхронизировать внешний и локальный репозиторий TXT
+
+ git pull
